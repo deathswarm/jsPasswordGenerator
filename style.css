@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+input:active {
+    border: none;
+    outline: none;
+}
+
+p {
+    margin: 5px 0;
+}
+
+h2 {
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+input[type=checkbox] {
+    margin-right: 0;
+}
+
+.title {
+    text-align: center;
+    max-width: 360px;
+}
+
+.container {
+    background-color: #1f1b24;
+    box-shadow: 0px 7px 10px rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+}
+
+.result-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    height: 50px;
+    width: 100%;
+}
+
+.result-container #result {
+    word-wrap: break-word;
+    max-width: calc(100% - 40px);
+}
+
+.result-container .btn {
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.btn {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: #332940;
+}
+
+.btn-large {
+    display: block;
+    width: 100%;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+@media screen and (max-width: 400px) {
+    .result-container {
+        font-size: 14px;
+    }
+}
